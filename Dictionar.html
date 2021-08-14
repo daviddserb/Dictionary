@@ -27,21 +27,15 @@
 
     <script>
       var list = [];
-      //alert("list= " + list);
 
       function addWordToDictionary() {
         var addWord = document.getElementById("inputAddWord").value;
-        //alert("cuvantul adaugat= " + addWord);
-        list.push(addWord); //adaugam cuvantul la sf. listei (NU cred ca are ceva daca il adaug la sfarsit/incepu)
-        //alert(list);
+        list.push(addWord); //Adaugam cuvantul la sf. listei. ? NU cred ca are ceva daca il adaug la sfarsit/inceput
       }
 
       function searchWordInDictionary() {
         var searchWord = document.getElementById("inputSearchWord").value;
-        //alert("cuvantul cautat= " + searchWord);
-        //alert("lungimea listei= " + list.length);
         for (var i = 0; i < list.length; ++i) {
-          //alert("elementele listei= " + list[i]);
           if (list[i] == searchWord) {
             alert("The word already exists in the dictionary"); //daca s-a gasit cuvantul
             break; //oprim cautarile
