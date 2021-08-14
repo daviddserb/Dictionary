@@ -33,8 +33,8 @@
         var searchWord = document.getElementById("inputSearchWord").value;
         for (var i = 0; i < list.length; ++i) {
           if (list[i] == searchWord) {
-            alert("The word already exists in the dictionary"); //daca s-a gasit cuvantul
-            break; //oprim cautarile
+            alert("The word already exists in the dictionary");
+            break; //daca s-a gasit cuvantul oprim cautarile
           } else if (list[i] != searchWord && i == list.length - 1) { //dam verdictul doar dupa parcurgerea intregului dictionar
             alert("The word doesn't exist in the dictionary");
           }
